@@ -1,0 +1,21 @@
+Core Libraries:
+pandas → For data manipulation and cleaning
+
+numpy → For numerical operations
+
+NLP (Natural Language Processing):
+textblob → For sentiment analysis (polarity & subjectivity)
+
+nltk → For text preprocessing (stopwords, tokenization, etc.)
+
+
+Visualization Libraries:
+matplotlib.pyplot → For basic plotting
+
+seaborn → For advanced and attractive visualizations
+
+Other Utilities:
+re → For regular expressions (cleaning text)
+
+string → For punctuation handling (if used during preprocessing)
+
