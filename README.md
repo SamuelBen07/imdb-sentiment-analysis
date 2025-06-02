@@ -9,8 +9,8 @@ This project performs sentiment analysis on IMDB movie reviews using Natural Lan
 ## 📌 Project Overview
 
 - **Goal**: Predict sentiment (Positive/Negative) from IMDB reviews.
-- **Tech Stack**: Python, Scikit-learn, Pandas, Flask (optional), HTML/CSS.
-- **ML Model**: Logistic Regression (or any model you've used).
+- **Tech Stack**: Python, Scikit-learn, Pandas, Flask, HTML/CSS.
+- **ML Model**: Logistic Regression.
 
 ---
 
