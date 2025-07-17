@@ -2,18 +2,17 @@ from google.colab import files
 uploaded = files.upload()
 import pandas as pd
 
-# Replace 'your_file.csv' with the name of the file you uploaded (e.g., imdb_top_1000.csv)
+
 df = pd.read_csv("imdb_top_1000.csv")
 
-# Check the first few rows
 df.head()
-# Basic info
+
 df.info()
 
-# Check for missing values
+
 df.isnull().sum()
 
-# Check value counts for sentiment (if available)
+
 df['sentiment'].value_counts()
 import re
 import nltk
@@ -23,9 +22,9 @@ from nltk.corpus import stopwords
 stop_words = set(stopwords.words('english'))
 
 def clean_text(text):
-    text = re.sub(r'<.*?>', '', str(text))                   # remove HTML
-    text = re.sub(r'[^a-zA-Z]', ' ', text)                   # remove non-letters
-    words = text.lower().split()                             # lowercase and split
+    text = re.sub(r'<.*?>', '', str(text))                   
+    text = re.sub(r'[^a-zA-Z]', ' ', text)                   
+    words = text.lower().split()                             
     words = [word for word in words if word not in stop_words]
     return " ".join(words)
 
